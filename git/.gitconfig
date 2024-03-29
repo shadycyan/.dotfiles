@@ -1,0 +1,18 @@
+[user]
+	name = Cyan
+	email = 77025112+shadycyan@users.noreply.github.com
+	signingkey = C268509CC8CE26E7
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[credential]
+	helper = osxkeychain
